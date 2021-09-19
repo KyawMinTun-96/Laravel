@@ -18,9 +18,8 @@
 </head>
 <body>
 
-
+    @include('layout.navbar')
     @yield('content')
-
 
 
     <!-- jQuery -->

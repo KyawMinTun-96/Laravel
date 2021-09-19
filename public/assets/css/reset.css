@@ -1,0 +1,88 @@
+:root {
+
+
+    /*--background--*/
+    --bg-color1: rgb(12, 99, 139);
+    --bg-color5: #f3f3f3;
+
+
+
+    /*-- font color --*/
+    --ft-color1: #222;
+    --ft-color2: #fff;
+
+
+    /*-- font family --*/
+    --ft-family1: monospace;
+    --ft-family2: sans-serif;
+
+}
+
+
+body {
+    font-family: var(--ft-family1);
+    background-color: var(--bg-color5);
+}
+
+i {
+    color: var(--ft-color1);
+    margin-right: 2px;
+}
+
+.navbar i {
+    color: var(--ft-color2);
+    margin-right: 2px;
+}
+
+
+
+
+
+
+/*---------------commoon css--------------------*/
+.bgColor {
+    background-color: var(--bg-color1);
+}
+
+.ftColor {
+    color: var(--ft-color2);
+}
+
+
+
+
+
+
+
+/*---------------bootstrap css--------------------*/
+/*---navbar----*/
+.navbar-brand:hover {
+    color: var(--ft-color2);
+    opacity: 0.82;
+}
+
+.nav-item:not(ul .account) {
+    margin-right: 10px;
+    border-right: 1px solid #f5f5f538;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--ft-color2);
+    opacity: 0.82;
+}
+
+.nav-item .nav-link:focus {
+    color: var(--ft-color2);
+}
+
+.account .dropdown-menu[data-bs-popper] {
+    left: -100px;
+    right: 0 !important;
+}
+
+
+
+/*---sidebar---*/
+.accordion-item .accordion-button {
+    color: var(--ft-color1);
+}

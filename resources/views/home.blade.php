@@ -1,7 +1,17 @@
 @extends('layout.master')
-
 @section('title', 'Home Page')
 
+
+
 @section('content')
-    <h1>This is the home page.</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                @include('layout.sidebar')
+            <div class="col-md-9">
+                Content
+            </div>
+        </div>
+    </div>
     @endsection
