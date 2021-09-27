@@ -1,11 +1,8 @@
 :root {
 
-
     /*--background--*/
     --bg-color1: rgb(12, 99, 139);
-    --bg-color5: #f3f3f3;
-
-
+    --bg-color5: #f1f1f1;
 
     /*-- font color --*/
     --ft-color1: #222;
@@ -36,9 +33,6 @@ i {
 
 
 
-
-
-
 /*---------------commoon css--------------------*/
 .bgColor {
     background-color: var(--bg-color1);
@@ -50,39 +44,69 @@ i {
 
 
 
-
-
-
-
 /*---------------bootstrap css--------------------*/
-/*---navbar----*/
-.navbar-brand:hover {
+.bs-row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/*------- navbar --------*/
+.bs-navbar-brand:hover {
     color: var(--ft-color2);
     opacity: 0.82;
 }
 
-.nav-item:not(ul .account) {
+.bs-nav-item:not(ul .account) {
     margin-right: 10px;
     border-right: 1px solid #f5f5f538;
 }
 
-.nav-item:hover .nav-link {
+.bs-nav-item:hover .bs-nav-link {
     color: var(--ft-color2);
     opacity: 0.82;
 }
 
-.nav-item .nav-link:focus {
+.bs-nav-item .bs-nav-link:focus {
     color: var(--ft-color2);
 }
 
-.account .dropdown-menu[data-bs-popper] {
+.account .bs-dropdown-menu[data-bs-popper] {
     left: -100px;
     right: 0 !important;
 }
 
 
 
-/*---sidebar---*/
-.accordion-item .accordion-button {
+/*------- sidebar -------*/
+.bs-accordion-item .bs-accordion-button {
     color: var(--ft-color1);
 }
+
+
+
+/*------ content ------*/
+.bs-card {
+    width: 100% !important;
+    border: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bs-card .bs-card-body{
+    font-family: var(--ft-family2);
+}
+
+.bs-card-body .bs-card-title {
+    margin-bottom: 15px;
+}
+
+.bs-card-body .bs-card-text {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.bs-card-body > .bs-btn {
+    color: #fff;
+}
+
+
