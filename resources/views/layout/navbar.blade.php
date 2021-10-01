@@ -41,6 +41,15 @@
             <a class="nav-link ftColor bs-nav-link" href="#"><i class="fas fa-cart-arrow-down"></i>Cart</a>
         </li>
         <li class="nav-item dropdown account bs-nav-item">
+            <a class="nav-link dropdown-toggle ftColor bs-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+            <ul class="dropdown-menu bs-dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{{url('products/create')}}">Create</a></li>
+              <li><a class="dropdown-item" href="#">View All Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Delete</a></li>
+            </ul>
+          </li>
+        <li class="nav-item dropdown account bs-nav-item">
             <a class="nav-link dropdown-toggle ftColor bs-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users"></i></a>
             <ul class="dropdown-menu bs-dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Login</a></li>
