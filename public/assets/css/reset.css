@@ -2,11 +2,14 @@
 
     /*--background--*/
     --bg-color1: rgb(12, 99, 139);
+    --bg-color2: #fff;
     --bg-color5: #f1f1f1;
+
 
     /*-- font color --*/
     --ft-color1: #222;
     --ft-color2: #fff;
+    --ft-color3: #000;
 
 
     /*-- font family --*/
@@ -89,6 +92,7 @@ i {
 .bs-card {
     width: 100% !important;
     border: none;
+    background-color: var(--bg-color2);
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -106,7 +110,11 @@ i {
 }
 
 .bs-card-body > .bs-btn {
-    color: #fff;
+    color: var(--ft-color2);
+}
+
+.bs-card-footer {
+    background-color: var(--bg-color2);
 }
 
 
