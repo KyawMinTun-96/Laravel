@@ -1,0 +1,16 @@
+/*-------------tablet size-------------*/
+@media screen and (max-width: 769px){
+    /*-------- cart details ---------*/
+    .cart_details .product_qty {
+        padding: .1rem .75rem;
+    }
+
+
+
+}
+
+
+/*-------------mobile size-------------*/
+@media screen and (max-width: 576px){
+    
+}

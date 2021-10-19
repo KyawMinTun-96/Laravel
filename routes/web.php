@@ -28,3 +28,5 @@ Route::get('/', [PageController::class, 'index']);
 Route::get('/products/', [PageController::class, 'index']);
 Route::get('/products/create', [ProductController::class, 'create']);
 Route::post('/products/create', [ProductController::class, 'store']);
+Route::get('/products/{id}/add-carts', [PageController::class, 'add'])->name('addCart');
+Route::get('/products/carts', [PageController::class, 'show']);

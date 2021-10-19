@@ -38,7 +38,19 @@
             <a class="nav-link ftColor bs-nav-link" href="#"><i class="fas fa-tshirt"></i>Brand</a>
         </li>
         <li class="nav-item bs-nav-item">
-            <a class="nav-link ftColor bs-nav-link" href="#"><i class="fas fa-cart-arrow-down"></i>Cart</a>
+            <a class="nav-link ftColor bs-nav-link" href="{{url('products/carts')}}">
+              <i class="fas fa-cart-arrow-down position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  @if(session('items')) 
+                      {{count(session('items'))}}
+                      +
+                  @else
+                    0
+                  @endif
+                    
+                </span>
+              </i>Cart
+            </a>
         </li>
         <li class="nav-item dropdown account bs-nav-item">
             <a class="nav-link dropdown-toggle ftColor bs-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>

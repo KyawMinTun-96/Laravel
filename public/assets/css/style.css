@@ -1,3 +1,16 @@
+/*----------- nav bar -------------*/
+.badge {
+    font-size: .6em;
+}
+
+.top-0 {
+    top: -5px !important;
+}
+
+
+
+
+
 /*----------- product card -------------*/
 .product {
     background-color: var(--bg-color5);
@@ -32,3 +45,98 @@
 .card-footer .btn-cart:hover > i {
     color: var(--ft-color3);
 }
+
+
+
+
+
+
+
+
+
+
+
+/*--------------cart details------------*/
+.cart_details {
+    padding: 100px 0;
+}
+
+.cart_table thead tr {
+    background-color: var(--bg-color1);
+}
+
+.cart_table thead th {
+    font-family: var(--ft-family2);
+    color: var(--ft-color2);
+    font-weight: lighter;
+}
+
+.cart_table tbody > tr {
+    border-bottom: 1.5px solid var(--bg-color5);
+}
+
+.cart_table tbody > tr:last-of-type {
+    border-bottom: 1.5px solid var(--bg-color1);
+}
+
+.cart_table tbody tr td {
+    border: none;
+}
+
+.cart_table tbody tr:hover {
+    background-color: var(--bg-color6);
+}
+
+.cart_table tbody .product_img {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.cart_table tbody .product_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart_table tbody h4,
+.cart_table tbody p,
+.cart_table tbody .product_price,
+.cart_table tbody .product_qty,
+.cart_table tbody .product_subtotal {
+    font-family: var(--ft-family2);
+    font-weight: lighter;
+}
+
+.cart_table tbody h4 {
+    font-size: 18px;
+}
+
+.cart_table tbody p {
+    font-size: 13px;
+}
+
+.cart_details .product_price {
+    font-size: 14px;
+}
+
+.cart_details .product_qty {
+    box-shadow: none;
+}
+
+.cart_details .remove_btn {
+    padding: 0.15rem .4rem;
+}
+
+.cart_details .remove_btn i {
+    color: var(--ft-color2);
+    font-size: 13px;
+}
+
+
+.cart_details tfoot tr {
+    border-bottom: 1.5px solid #999;
+}
+
+.cart_details tfoot tr td {
+    border: none;
+}
+

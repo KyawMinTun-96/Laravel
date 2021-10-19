@@ -3,7 +3,10 @@
     /*--background--*/
     --bg-color1: rgb(12, 99, 139);
     --bg-color2: #fff;
+    --bg-color3: rgb(12, 99, 139, 0.03);
     --bg-color5: #f1f1f1;
+    --bg-color6: rgba(248, 249, 250, 0.795);
+    
 
 
     /*-- font color --*/
@@ -89,7 +92,7 @@ i {
 
 
 /*------ content ------*/
-.bs-card {
+.bs-card, .cart_table{
     width: 100% !important;
     border: none;
     background-color: var(--bg-color2);
