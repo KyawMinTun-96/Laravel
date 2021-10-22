@@ -12,5 +12,13 @@
 
 /*-------------mobile size-------------*/
 @media screen and (max-width: 576px){
-    
+        /*-------- cart details ---------*/
+        .cart_details{
+            overflow-x: scroll;
+        }
+
+        .product_name {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
 }

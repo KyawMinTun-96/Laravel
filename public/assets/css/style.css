@@ -79,11 +79,11 @@
     border-bottom: 1.5px solid var(--bg-color1);
 }
 
-.cart_table tbody tr td {
+.cart_table tbody tr > td {
     border: none;
 }
 
-.cart_table tbody tr:hover {
+.cart_table tbody > tr:hover {
     background-color: var(--bg-color6);
 }
 
@@ -131,12 +131,28 @@
     font-size: 13px;
 }
 
-
-.cart_details tfoot tr {
+.cart_details tfoot > tr {
     border-bottom: 1.5px solid #999;
 }
 
-.cart_details tfoot tr td {
+.cart_details tfoot tr > td {
     border: none;
 }
 
+
+.cart_details tfoot .shopping_btn,
+.cart_details tfoot .shopping_btn i {
+    color: #fff;
+}
+
+
+.cart_details tfoot .shopping_btn,
+.cart_details tfoot .shopping_btn i {
+    color: #fff;
+}
+
+
+.cart_details tfoot .checkout_btn,
+.cart_details tfoot .checkout_btn i {
+    color: #fff;
+}

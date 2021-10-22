@@ -22,7 +22,7 @@
                         @foreach($products as $product)
                             <tr>
                                 <td>
-                                    <div class="d-flex flex-row justify-content-start">
+                                    <div class="d-flex flex-row justify-content-start product_name">
 
                                         <div class="me-2 product_img">
                                             <img src="{{asset('uploads/'. unserialize($product->images)[0])}}" alt="..." class="img-responsive"/>
@@ -55,16 +55,21 @@
 					<tfoot>
 						<tr>
 							<td>
-                                <a href="#" class="btn btn-warning">
+                                <a href="#" class="btn btn-warning shopping_btn">
                                     <i class="fa fa-angle-left"></i> Continue Shopping
                                 </a>
                             </td>
+                            <td></td>
+                            <td></td>
 
-							<td class="text-center"><strong>Total $1.99</strong></td>
+							<td class="text-center">
+                                <strong>Total $1.99</strong>
+                            </td>
+                            
                             
 							<td>
-                                <a href="#" class="btn btn-success d-block">Checkout <i class="fa fa-angle-right"></i>
-                            </a>
+                                <a href="#" class="btn btn-success d-block checkout_btn">Checkout <i class="fa fa-angle-right"></i>
+                                </a>
                             </td>
 						</tr>
 					</tfoot>

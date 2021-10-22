@@ -64,10 +64,13 @@
         <li class="nav-item dropdown account bs-nav-item">
             <a class="nav-link dropdown-toggle ftColor bs-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users"></i></a>
             <ul class="dropdown-menu bs-dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Login</a></li>
-              <li><a class="dropdown-item" href="#">register</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              @if(Auth::check()) 
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+                @else
+                  <li><a class="dropdown-item" href="{{url('user/login')}}">Login</a></li>
+                  <li><a class="dropdown-item" href="{{url('user/register')}}">register</a></li>
+              @endif
+
             </ul>
           </li>
       </ul>
